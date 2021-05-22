@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DialogActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="界面二"
+        android:layout_gravity="start"
+        android:textSize="30sp"/>
+    <Button
+        android:id="@+id/btn_normaldialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startNormalDialpg"
+        android:text="启动常规对话框" />
+
+    <Button
+        android:id="@+id/btn_progressdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startProgressDialog"
+        android:text="启动进度条对话框" />
+
+<!--    <Button
+        android:id="@+id/btn_listdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startListDialog"
+        android:text="启动带选项列表的对话框" />-->
+
+<!--设置时间选择对话框-->
+    <Button android:text="日期及时间对话框"
+        android:id="@+id/dateBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <!--<Button android:text="时间对话框"
+        android:id="@+id/timeBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />-->
+    <DigitalClock
+        android:text="@+id/digitalClock"
+        android:textSize="20dip"
+        android:gravity="center"
+        android:id="@+id/DigitalClock01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <AnalogClock
+        android:id="@+id/analogClock"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

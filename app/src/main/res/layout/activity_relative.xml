@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".RelativeActivity">
+    //android:padding="10dp"
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="30sp"
+        android:text="登录"
+        />
+
+    <EditText
+        android:id="@+id/tele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:hint="手机号:"/>
+
+    <!-- Button设置原则：先边缘，再中间:方便定位-->
+    <!--'取消'按钮:先放在文本框下方，再放在父容器的右侧-->
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tele"
+        android:hint="密码:" />
+
+    <!-- '确定'按钮：先放在文本框下方，再放在'取消'按钮的左侧-->
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/cancel"
+        android:text="登录" />
+
+</RelativeLayout>

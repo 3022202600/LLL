@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <EditText android:id="@+id/name"
+            android:text=""
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip" >
+        </EditText>
+        <TextView android:id="@+id/name_label"
+            android:text="姓名："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/name"
+            android:layout_alignBaseline="@+id/name">
+        </TextView>
+
+        <EditText android:id="@+id/sex"
+            android:text=""
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_below="@id/name"
+            >
+        </EditText>
+        <TextView android:id="@+id/sex_label"
+            android:text="性别："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/sex"
+            android:layout_alignBaseline="@+id/sex" >
+        </TextView>
+
+        <EditText android:id="@+id/totalcredits"
+            android:layout_width="265dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dip"
+            android:layout_below="@id/sex"
+            android:numeric="integer">
+        </EditText>
+        <TextView android:id="@+id/totalcredits_label"
+            android:text="总学分："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/totalcredits"
+            android:layout_alignBaseline="@+id/totalcredits">
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/add"
+            android:text="插入数据"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dip"
+            android:layout_weight="1">
+        </Button>
+        <Button android:id="@+id/query_all"
+            android:text="全部查询"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dip"
+            android:layout_weight="1">
+        </Button>
+        <Button android:id="@+id/clear"
+            android:text="清除显示"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding = "5dip"
+            android:layout_weight="1">
+        </Button>
+
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/RelativeLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+
+        <EditText android:id="@+id/id_entry"
+            android:text=""
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip" >
+        </EditText>
+        <TextView android:id="@+id/id_label"
+            android:text="ID："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/id_entry"
+            android:layout_alignBaseline="@+id/id_entry">
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/query"
+            android:text="查询"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding = "3dip"
+            android:layout_weight="1">
+        </Button>
+        <Button android:id="@+id/update"
+            android:text="更新"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding = "3dip"
+            android:layout_weight="1">
+        </Button>
+        <Button android:id="@+id/delete"
+            android:text="删除"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding = "3dip"
+            android:layout_weight="1">
+        </Button>
+    </LinearLayout>
+
+    <TextView android:id="@+id/label"
+        android:text="查询结果："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <ScrollView  android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView android:id="@+id/display"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
